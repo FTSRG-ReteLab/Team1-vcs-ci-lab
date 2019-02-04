@@ -22,19 +22,19 @@ public class TrainControllerImpl implements TrainController {
 
 		enforceSpeedLimit();
 	}
-
+	//Gets refernce speed
 	@Override
 	public int getReferenceSpeed() {
 		return referenceSpeed;
 	}
-
+	//Set's speed limit
 	@Override
 	public void setSpeedLimit(int speedLimit) {
 		this.speedLimit = speedLimit;
 		enforceSpeedLimit();
 		
 	}
-
+	//Enforces speed limit
 	private void enforceSpeedLimit() {
 		if (referenceSpeed > speedLimit) {
 			referenceSpeed = speedLimit;
