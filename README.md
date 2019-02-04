@@ -56,6 +56,6 @@ The figure below illustrates this behavior using an example.
 
 * First line
 * Second Line
-* This is branch A
+* This is branch A, the best branch
 
 
