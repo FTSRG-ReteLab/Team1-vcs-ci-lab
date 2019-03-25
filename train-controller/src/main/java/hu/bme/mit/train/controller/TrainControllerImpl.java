@@ -11,7 +11,7 @@ public class TrainControllerImpl implements TrainController {
 	private int speedLimit = 0;
 	private Timer followSpeedTimer;
 
-	public void TrainControllerImpl()
+	TrainControllerImpl()
 	{
 		followSpeedTimer = new Timer();
 		followSpeedTimer.scheduleAtFixedRate(new TimerTask() {
@@ -19,7 +19,7 @@ public class TrainControllerImpl implements TrainController {
 			public void run() {
 				followSpeed();
 			}
-		}, 3*1000, 3*1000);
+		}, 1000, 1000);
 
 	}
 
