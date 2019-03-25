@@ -12,13 +12,13 @@ public class TrainControllerImpl implements TrainController {
 	private int speedLimit = 0;
 	private Timer timer = new Timer();
 
-	TrainControllerImpl(){
+	public TrainControllerImpl(){
 		timer.schedule(new TimerTask() {
 			@Override
 			public void run() {
 				followSpeed();
 			}
-		}, 2*1000, 2*1000);
+		}, 2*1000L, 2*1000L);
 	}
 
 	@Override
